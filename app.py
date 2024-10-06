@@ -20,6 +20,12 @@ with st.sidebar:
         If you don't know where to obtain your API key, you can follow this link: 
         [Get your Groq API Key here](https://console.groq.com/keys).
     """)
+    st.write("""
+    #### Important Note on YouTube Summarization:
+    
+    For YouTube videos that do not have a transcript or closed captions available, our tool attempts to summarize the content by extracting audio information. While this process can yield useful summaries, the accuracy and comprehensiveness of the results may vary. 
+    Therefore, for the best summarization experience, it is recommended to use videos that include transcripts or closed captions.
+""")
 gen_url = st.text_input("URL", label_visibility="collapsed" )
 
 if not api_key.strip():
